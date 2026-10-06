@@ -1,0 +1,37 @@
+### ~/.config/mise/config.toml
+
+[tools]
+# Fallback runtimes when a project folder doesn't specify a version
+node = "22"
+python = "3.12"
+go = "1.22"
+pnpm = "latest"
+
+[settings]
+# True means mise will automatically install missing tools when a command is run
+not_found_auto_install = true 
+
+# Tell mise to auto-install missing tools globally when it encounters them
+auto_install = true
+
+# Number of concurrent installations allowed
+jobs = 4 
+
+# Housekeeping preferences
+always_keep_download = false
+always_keep_install = false
+asdf_compat = false
+experimental = false
+verbose = false
+
+[plugins]
+# Custom plugin repositories can be listed here if needed
+
+[tool_alias.node.versions]
+# Custom shortcuts for version strings
+lts = "22"
+work = "18.20"
+
+[env]
+# Global environment variables for all terminal sessions
+EDITOR = "nvim"
