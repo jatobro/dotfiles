@@ -4,7 +4,6 @@
 # Fallback runtimes when a project folder doesn't specify a version
 node = "22"
 python = "3.12"
-go = "1.22"
 pnpm = "latest"
 
 [settings]
