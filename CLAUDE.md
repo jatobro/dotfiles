@@ -18,3 +18,7 @@ Only a subset of directories is tracked: `aerospace`, `btop`, `ghostty`, `lazygi
 - `mise/config.toml`: global fallback runtimes (node, python, pnpm) with auto-install enabled.
 - `ghostty/config.ghostty` with custom theme `ghostty/themes/vague` (matches the `vague` nvim colorscheme — keep them visually consistent).
 - `aerospace/aerospace.toml`: tiling window manager config.
+
+## Keeping the README current
+
+When a change affects what `README.md` describes — tracked directories/tools, the contents table, install steps, theme, or the notes about untracked/gitignored dirs — update `README.md` in the same change. If a change doesn't affect it, leave it alone.
