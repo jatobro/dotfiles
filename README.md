@@ -21,7 +21,7 @@ The theme throughout is [vague](https://github.com/vague-theme/vague.nvim).
 Clone into `~/.config`, including the nvim submodule:
 
 ```sh
-git clone --recurse-submodules git@github.com:jatobro/.config.git ~/.config
+git clone --recurse-submodules git@github.com:jatobro/dotfiles.git ~/.config
 ```
 
 If already cloned without submodules:
