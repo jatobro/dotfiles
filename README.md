@@ -13,6 +13,7 @@ Personal macOS configuration, kept in `~/.config`.
 | `mise` | [mise](https://mise.jdx.dev) | Global fallback runtimes (node, python, pnpm) |
 | `lazygit` | [lazygit](https://github.com/jesseduffield/lazygit) | Git TUI config |
 | `btop` | [btop](https://github.com/aristocratos/btop) | System monitor config |
+| `.claude` | [Claude Code](https://claude.com/claude-code) | Project settings, hooks and skills for working in this repo |
 
 The theme throughout is [vague](https://github.com/vague-theme/vague.nvim).
 
@@ -32,8 +33,11 @@ git submodule update --init
 
 Then install the tools above (e.g. via Homebrew) and the Hack Nerd Font.
 
+Optional: the Claude Code hooks in `.claude/hooks` run `stylua` (Lua) and `taplo` (TOML) as syntax checks after edits; they are skipped if those aren't installed.
+
 ## Notes
 
 - `1Password` and `containers` are gitignored.
+- `.claude/settings.json` denies reads of the credential-bearing directories below, and a hook blocks `git add` of them. Personal overrides go in `.claude/settings.local.json` (gitignored).
 - Some other tool directories (`gh`, `gcloud`, `git`, `k9s`, etc.) may exist locally but are untracked; they can contain credentials, so review before adding.
 - Changes to `nvim` must be committed and pushed inside the submodule, then the submodule pointer updated here.
