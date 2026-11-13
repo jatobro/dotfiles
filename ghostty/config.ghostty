@@ -1,6 +1,8 @@
 theme = vague
 
 font-family = Hack Nerd Font Mono
+font-size = 13
+font-thicken = true
 
 macos-titlebar-style = hidden
 
