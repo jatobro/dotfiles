@@ -1,3 +1,9 @@
 1Password/
 containers/
 .claude/settings.local.json
+
+# OpenCode machine-specific & generated files
+.config/opencode/service.json
+.config/opencode/node_modules/
+.config/opencode/package.json
+.config/opencode/bun.lock
